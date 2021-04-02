@@ -102,9 +102,9 @@
     <AndroidResource Include="Resources\drawable\icon_feed.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GPSNotebook\GPSNotebooks.csproj">
+    <ProjectReference Include="..\GPSNotebook\GPSNotebook.csproj">
       <Project>{B0A290E0-E669-4A59-9F58-CA562BF65EC0}</Project>
-      <Name>GPSNotebooks</Name>
+      <Name>GPSNotebook</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
