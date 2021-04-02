@@ -1,4 +1,5 @@
-﻿using GPSNotebook.Resources;
+﻿
+using GPSNotebook.Resources;
 using GPSNotebook.Services.Authorization;
 using GPSNotebook.Views;
 using Prism.Commands;

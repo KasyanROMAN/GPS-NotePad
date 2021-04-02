@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSNotebook.Android", "GPSN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSNotebook.iOS", "GPSNotebook\GPSNotebook.iOS\GPSNotebook.iOS.csproj", "{71BFF4B5-549B-48C6-85C2-0449023BC973}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPSNotebooks", "GPSNotebook\GPSNotebook\GPSNotebooks.csproj", "{B0A290E0-E669-4A59-9F58-CA562BF65EC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPSNotebook", "GPSNotebook\GPSNotebook\GPSNotebook.csproj", "{B0A290E0-E669-4A59-9F58-CA562BF65EC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
