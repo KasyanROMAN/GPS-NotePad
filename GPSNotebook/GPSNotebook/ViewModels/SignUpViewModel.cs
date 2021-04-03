@@ -108,7 +108,7 @@ namespace GPSNotebook.ViewModels
                 }
                 else
                 {
-                    var userModel = new UserModel
+                    var userModel = new User
                     {
                         Mail = Mail,
                         Name = Name,

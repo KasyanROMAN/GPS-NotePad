@@ -15,41 +15,37 @@ namespace GPSNotebook.Services.UserService
         {
             _repository = repository;
 
-            _repository.CreateTableAsync<UserModel>();
+            _repository.CreateTableAsync<User>();
         }
 
-        #region --- IUserService Implementation ---
-
-        public Task<List<UserModel>> GetItemsAsync()
+        public Task<List<User>> GetItemsAsync()
         {
-            return _repository.GetItemsAsync<UserModel>();
+            return _repository.GetItemsAsync<User>();
         }
 
-        public Task<UserModel> GetItemAsync(int id)
+        public Task<User> GetItemAsync(int id)
         {
-            return _repository.GetItemAsync<UserModel>(id);
+            return _repository.GetItemAsync<User>(id);
         }
 
-        public Task<UserModel> GetItemAsync(Expression<Func<UserModel, bool>> predicate)
+        public Task<User> GetItemAsync(Expression<Func<User, bool>> predicate)
         {
             return _repository.GetItemAsync(predicate);
         }
 
-        public Task<int> InsertItemAsync(UserModel item)
+        public Task<int> InsertItemAsync(User item)
         {
             return _repository.InsertItemAsync(item);
         }
 
-        public Task<int> UpdateItemAsync(UserModel item)
+        public Task<int> UpdateItemAsync(User item)
         {
             return _repository.UpdateItemAsync(item);
         }
 
-        public Task<int> DeleteItemAsync(UserModel item)
+        public Task<int> DeleteItemAsync(User item)
         {
             return _repository.DeleteItemAsync(item);
         }
-
-        #endregion
     }
 }

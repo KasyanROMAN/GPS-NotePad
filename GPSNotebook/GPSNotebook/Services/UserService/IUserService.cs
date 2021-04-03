@@ -8,14 +8,14 @@ namespace GPSNotebook.Services.UserService
 {
     public interface IUserService
     {
-        Task<List<UserModel>> GetItemsAsync();
+        Task<List<User>> GetItemsAsync();
 
-        Task<UserModel> GetItemAsync(int id);
-        Task<UserModel> GetItemAsync(Expression<Func<UserModel, bool>> predicate);
+        Task<User> GetItemAsync(int id);
+        Task<User> GetItemAsync(Expression<Func<User, bool>> predicate);
 
-        Task<int> InsertItemAsync(UserModel item);
-        Task<int> UpdateItemAsync(UserModel item);
+        Task<int> InsertItemAsync(User item);
+        Task<int> UpdateItemAsync(User item);
 
-        Task<int> DeleteItemAsync(UserModel item);
+        Task<int> DeleteItemAsync(User item);
     }
 }

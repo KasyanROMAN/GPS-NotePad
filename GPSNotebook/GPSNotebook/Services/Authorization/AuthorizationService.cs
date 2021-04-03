@@ -11,7 +11,7 @@ namespace GPSNotebook.Services.Authorization
             _settingsManager = settingsManager;
         }
 
-        #region -- IAuthorizationService Implementation --
+        
 
         public bool IsAuthorized => _settingsManager.RememberedMail != default;
 
@@ -29,6 +29,5 @@ namespace GPSNotebook.Services.Authorization
             _settingsManager.RememberedMail = default;
         }
 
-        #endregion
     }
 }

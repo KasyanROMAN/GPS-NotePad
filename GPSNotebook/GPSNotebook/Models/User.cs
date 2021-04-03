@@ -3,7 +3,7 @@
 namespace GPSNotebook.Models
 {
     [Table("Users")]
-    public class UserModel : IEntityBase
+    public class User : IEntity
     {
         [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { get; set; }

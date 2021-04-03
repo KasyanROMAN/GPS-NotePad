@@ -4,7 +4,6 @@ namespace GPSNotebook.Services.Settings
 {
     public class SettingsManager : ISettingsManager
     {
-        #region -- ISettingsManager Implementation --
 
         public int RememberedUserId
         {
@@ -17,7 +16,5 @@ namespace GPSNotebook.Services.Settings
             get => Preferences.Get(nameof(RememberedMail), default(string));
             set => Preferences.Set(nameof(RememberedMail), value);
         }
-
-        #endregion
     }
 }
