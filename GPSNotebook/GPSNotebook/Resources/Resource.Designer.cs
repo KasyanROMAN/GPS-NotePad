@@ -258,9 +258,6 @@ namespace GPSNotebook.Resources {
             }
         }
         
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Users Sign Up.
-        /// </summary>
         internal static string SignUpTitle {
             get {
                 return ResourceManager.GetString("SignUpTitle", resourceCulture);
