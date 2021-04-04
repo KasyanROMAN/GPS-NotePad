@@ -10,9 +10,6 @@ namespace GPSNotebook.Services.Authorization
         {
             _settingsManager = settingsManager;
         }
-
-        
-
         public bool IsAuthorized => _settingsManager.RememberedMail != default;
 
         public int GetCurrentUserId => IsAuthorized ? _settingsManager.RememberedUserId : -1;
