@@ -4,7 +4,7 @@ using GoogleMap = Xamarin.Forms.GoogleMaps.Map;
 
 namespace GPSNotebook.ViewModels
 {
-    class MapTabViewModel
+    class MapViewModel
     {
         GoogleMap MainMap = new GoogleMap();
         

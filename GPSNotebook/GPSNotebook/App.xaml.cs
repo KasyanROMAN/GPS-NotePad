@@ -11,6 +11,7 @@ using Xamarin.Forms;
 
 namespace GPSNotebook
 {
+
     public partial class App : PrismApplication
     {
         private IAuthorizationService _authorizationService;
@@ -20,8 +21,6 @@ namespace GPSNotebook
         public App(IPlatformInitializer initializer = null) : base(initializer)
         {
         }
-
-        #region -- Overrides --
 
         protected override void OnStart()
         {
@@ -33,13 +32,12 @@ namespace GPSNotebook
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Services
             containerRegistry.RegisterInstance<ISettingsManager>(Container.Resolve<SettingsManager>());
             containerRegistry.RegisterInstance<IRepository>(Container.Resolve<Repository>());
             containerRegistry.RegisterInstance<IAuthorizationService>(Container.Resolve<AuthorizationService>());
             containerRegistry.RegisterInstance<IUserService>(Container.Resolve<UserService>());
 
-            // Navigation
+            ///////////////////////////////////////////////////////////////////////
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<SignInPage, SignInViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpViewModel>();
@@ -63,7 +61,5 @@ namespace GPSNotebook
         protected override void OnResume()
         {
         }
-
-        #endregion
     }
 }
