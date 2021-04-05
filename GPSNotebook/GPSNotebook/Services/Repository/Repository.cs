@@ -19,7 +19,6 @@ namespace GPSNotebook.Services.Repository
                 Path.Combine(Constants.DatabasePath, Constants.DATABASE_NAME));
         }
 
-        #region --- IRepository Implementation ---
 
         public Task CreateTableAsync<T>() where T : IEntity, new()
         {
@@ -51,7 +50,6 @@ namespace GPSNotebook.Services.Repository
             int result;
             try
             {
-                // exception will occur if we try to add a user that already exists (unique attribute)
                 result = await _database.InsertAsync(item);
             }
             catch (Exception e)
@@ -72,7 +70,5 @@ namespace GPSNotebook.Services.Repository
         {
             return _database.DeleteAsync<T>(item.Id);
         }
-
-        #endregion
     }
 }

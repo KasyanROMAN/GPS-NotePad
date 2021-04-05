@@ -19,7 +19,7 @@ namespace GPSNotebook.Control
         {
             if (newValue != null)
             {
-                //MapSpan = newValue;
+              
             }
         }
         public MapSpan MapSpan

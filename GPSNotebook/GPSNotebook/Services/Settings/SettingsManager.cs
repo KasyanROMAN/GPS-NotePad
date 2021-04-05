@@ -10,7 +10,6 @@ namespace GPSNotebook.Services.Settings
             get => Preferences.Get(nameof(RememberedUserId), default(int));
             set => Preferences.Set(nameof(RememberedUserId), value);
         }
-
         public string RememberedMail
         {
             get => Preferences.Get(nameof(RememberedMail), default(string));
